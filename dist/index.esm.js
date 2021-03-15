@@ -1413,7 +1413,7 @@ var sortDataInOrder = function (data, columns) {
 };
 var makeRender = function (
 // eslint-disable-next-line
-value, 
+value,
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 render, row) {
     return render ? function () { return render({ row: row, value: value }); } : function () { return value; };
@@ -2129,62 +2129,32 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/bitblocksdefi",
+                href: "https://t.me/BitblocksOfficial",
             },
             // {
             //   label: "Bahasa Indonesia",
             //   href: "https://t.me/PancakeSwapIndonesia",
             // },
             {
-                label: "中文",
-                href: "https://t.me/bitblocksfinancechinese",
+                label: "Portuguese (BR)",
+                href: "https://t.me/BitBlocksBrasil",
             },
-            // {
-            //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
-            // },
-            // {
-            //   label: "Italiano",
-            //   href: "https://t.me/pancakeswap_ita",
-            // },
-            {
-                label: "русский",
-                href: "https://t.me/bitblocksfinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/BitBlocksFinanceTurkey",
-            },
-            // {
-            //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
-            // },
-            {
-                label: "Español",
-                href: "https://t.me/bitblocksfinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/bitblocksfinancejapanese",
-            },
+
             // {
             //   label: "Français",
             //   href: "https://t.me/pancakeswapfr",
             // },
             {
                 label: "Announcements",
-                href: "https://t.me/bitblocksfinanceann",
+                href: "https://t.me/BitblocksANN",
             },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
-            },
+
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/FinanceBitBlocks",
+        href: "https://twitter.com/BitBlocks_",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2329,7 +2299,7 @@ var PanelFooter = function (_a) {
                     React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
                     React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
             React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
+                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); },
                 // Safari fix
                 style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
 };
