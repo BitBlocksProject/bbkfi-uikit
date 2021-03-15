@@ -99,16 +99,13 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/bitblocksdefi/",
+        href: "https://github.com/bitblocksproject/",
       },
       {
         label: "Docs",
-        href: "https://bitblocksdefi.gitbook.io/bitblocks-finance/",
+        href: "https://bbfi.gitbook.io/bitblocks-finance/",
       },
-      {
-        label: "Blog",
-        href: "https://bitblocksfinance.medium.com/",
-      },
+
     ],
   },
 ];
@@ -120,62 +117,27 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/bitblocksdefi",
+        href: "https://t.me/BitblocksOfficial",
       },
       // {
       //   label: "Bahasa Indonesia",
       //   href: "https://t.me/PancakeSwapIndonesia",
       // },
       {
-        label: "中文",
-        href: "https://t.me/bitblocksfinancechinese",
+        label: "Portuguese (br)",
+        href: "https://t.me/BitBlocksBrasil",
       },
-      // {
-      //   label: "Tiếng Việt",
-      //   href: "https://t.me/PancakeSwapVN",
-      // },
-      // {
-      //   label: "Italiano",
-      //   href: "https://t.me/pancakeswap_ita",
-      // },
-      {
-        label: "русский",
-        href: "https://t.me/bitblocksfinancerussian",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/BitBlocksFinanceTurkey",
-      },
-      // {
-      //   label: "Português",
-      //   href: "https://t.me/PancakeSwapPortuguese",
-      // },
-      {
-        label: "Español",
-        href: "https://t.me/bitblocksfinancespanish",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/bitblocksfinancejapanese",
-      },
-      // {
-      //   label: "Français",
-      //   href: "https://t.me/pancakeswapfr",
-      // },
+
       {
         label: "Announcements",
-        href: "https://t.me/bitblocksfinanceann",
-      },
-      {
-        label: "Price Bot",
-        href: "https://t.me/BinanceRocketEGG",
+        href: "https://t.me/BitBlocksANN",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/FinanceBitBlocks",
+    href: "https://twitter.com/BitBLocks_",
   },
 ];
 
