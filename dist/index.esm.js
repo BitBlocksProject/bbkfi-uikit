@@ -2109,7 +2109,7 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/bitblocksdefi/",
+                href: "https://github.com/BitBlocksProject",
             },
             {
                 label: "Docs",
