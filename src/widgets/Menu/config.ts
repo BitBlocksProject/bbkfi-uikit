@@ -117,7 +117,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/BitblocksOfficial",
+        href: "https://t.me/bitblocksfinace",
       },
       // {
       //   label: "Bahasa Indonesia",
@@ -125,7 +125,7 @@ export const socials = [
       // },
       {
         label: "Portuguese (br)",
-        href: "https://t.me/BitBlocksBrasil",
+        href: "https://t.me/bitblocksfinancebrasil",
       },
 
       {
@@ -137,7 +137,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/BitBLocks_",
+    href: "https://twitter.com/BBKFI",
   },
 ];
 
