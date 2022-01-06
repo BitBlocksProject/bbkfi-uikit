@@ -89,38 +89,12 @@ const Icon: React.FC<SvgProps> = (props) => {
           className="prefix__st2"
           d="M33.1 34.3s1 1.8-.6 3.4l1.3 1.3c-.1.1-.2.2-.2.3l-.9-.9s-1.2 1.5-3.3.6c0 0 1.1-1.4 3-.9L30.2 36l.3-.3 1.8 1.8s-.8-1.7.8-3.2zM28.9 40s.6 1.1-.4 2.1l.6.6c-.1 0-.1.1-.2.1l-.3-.3s-.8.9-2.1.4c0 0 .7-.9 1.9-.6L27.1 41l.2-.2 1.1 1.1c0 .1-.5-1 .5-1.9zM37 31.9s.6 1.1-.4 2.1l.7.7-.2.2-.4-.4s-.8.9-2.1.4c0 0 .7-.9 1.9-.6L35.2 33l.2-.2 1.1 1.1s-.5-1.1.5-2z"
         />
-        <circle
-          transform="rotate(-45.001 25.272 39.087)"
-          className="prefix__st3"
-          cx={25.3}
-          cy={39.1}
-          r={3.2}
-        />
-        <circle
-          transform="rotate(-45.001 25.272 39.087)"
-          className="prefix__st4"
-          cx={25.3}
-          cy={39.1}
-          r={2.7}
-        />
-        <circle
-          transform="rotate(-45.001 25.272 39.087)"
-          className="prefix__st5"
-          cx={25.3}
-          cy={39.1}
-          r={2.3}
-        />
+        <circle transform="rotate(-45.001 25.272 39.087)" className="prefix__st3" cx={25.3} cy={39.1} r={3.2} />
+        <circle transform="rotate(-45.001 25.272 39.087)" className="prefix__st4" cx={25.3} cy={39.1} r={2.7} />
+        <circle transform="rotate(-45.001 25.272 39.087)" className="prefix__st5" cx={25.3} cy={39.1} r={2.3} />
         <g id="prefix__Group_1_" transform="translate(7 7)">
-          <path
-            id="prefix__Fill-1_1_"
-            className="prefix__st2"
-            d="M17.5 30.8l.2.2.5-.5.5.6.2-.2-.7-.7z"
-          />
-          <path
-            id="prefix__Fill-2_1_"
-            className="prefix__st2"
-            d="M17.5 33.2l.5.5.1.1.1.1.6-.7-.2-.1-.4.4-.5-.5z"
-          />
+          <path id="prefix__Fill-1_1_" className="prefix__st2" d="M17.5 30.8l.2.2.5-.5.5.6.2-.2-.7-.7z" />
+          <path id="prefix__Fill-2_1_" className="prefix__st2" d="M17.5 33.2l.5.5.1.1.1.1.6-.7-.2-.1-.4.4-.5-.5z" />
           <g id="prefix__Group-5_2_">
             <defs>
               <filter
@@ -134,20 +108,9 @@ const Icon: React.FC<SvgProps> = (props) => {
                 <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
               </filter>
             </defs>
-            <mask
-              maskUnits="userSpaceOnUse"
-              x={16.3}
-              y={31.1}
-              width={1.7}
-              height={1.9}
-              id="prefix__mask-6_6_"
-            >
+            <mask maskUnits="userSpaceOnUse" x={16.3} y={31.1} width={1.7} height={1.9} id="prefix__mask-6_6_">
               <g filter="url(#prefix__Adobe_OpacityMaskFilter)">
-                <path
-                  id="prefix__path-5_6_"
-                  className="prefix__st0"
-                  d="M16.3 32l1.1-1 1 .9-1.1 1.1z"
-                />
+                <path id="prefix__path-5_6_" className="prefix__st0" d="M16.3 32l1.1-1 1 .9-1.1 1.1z" />
               </g>
             </mask>
             <path
@@ -164,38 +127,12 @@ const Icon: React.FC<SvgProps> = (props) => {
           />
         </g>
         <g>
-          <circle
-            transform="rotate(-45.001 33.38 30.979)"
-            className="prefix__st3"
-            cx={33.4}
-            cy={31}
-            r={3.2}
-          />
-          <circle
-            transform="rotate(-45.001 33.38 30.979)"
-            className="prefix__st4"
-            cx={33.4}
-            cy={31}
-            r={2.7}
-          />
-          <circle
-            transform="rotate(-45.001 33.38 30.979)"
-            className="prefix__st5"
-            cx={33.4}
-            cy={31}
-            r={2.3}
-          />
+          <circle transform="rotate(-45.001 33.38 30.979)" className="prefix__st3" cx={33.4} cy={31} r={3.2} />
+          <circle transform="rotate(-45.001 33.38 30.979)" className="prefix__st4" cx={33.4} cy={31} r={2.7} />
+          <circle transform="rotate(-45.001 33.38 30.979)" className="prefix__st5" cx={33.4} cy={31} r={2.3} />
           <g id="prefix__Group_2_" transform="translate(7 7)">
-            <path
-              id="prefix__Fill-1_2_"
-              className="prefix__st2"
-              d="M25.7 22.7l.1.2.5-.5.5.6.2-.2-.7-.7z"
-            />
-            <path
-              id="prefix__Fill-2_2_"
-              className="prefix__st2"
-              d="M25.6 25.1l.5.5.1.1.1.1.6-.7-.2-.1-.4.4-.5-.5z"
-            />
+            <path id="prefix__Fill-1_2_" className="prefix__st2" d="M25.7 22.7l.1.2.5-.5.5.6.2-.2-.7-.7z" />
+            <path id="prefix__Fill-2_2_" className="prefix__st2" d="M25.6 25.1l.5.5.1.1.1.1.6-.7-.2-.1-.4.4-.5-.5z" />
             <g id="prefix__Group-5_3_">
               <defs>
                 <filter
@@ -209,20 +146,9 @@ const Icon: React.FC<SvgProps> = (props) => {
                   <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
                 </filter>
               </defs>
-              <mask
-                maskUnits="userSpaceOnUse"
-                x={24.5}
-                y={23}
-                width={1.7}
-                height={1.9}
-                id="prefix__mask-6_5_"
-              >
+              <mask maskUnits="userSpaceOnUse" x={24.5} y={23} width={1.7} height={1.9} id="prefix__mask-6_5_">
                 <g filter="url(#prefix__Adobe_OpacityMaskFilter_1_)">
-                  <path
-                    id="prefix__path-5_5_"
-                    className="prefix__st0"
-                    d="M24.5 23.9l1-1 1 .9-1.1 1.1z"
-                  />
+                  <path id="prefix__path-5_5_" className="prefix__st0" d="M24.5 23.9l1-1 1 .9-1.1 1.1z" />
                 </g>
               </mask>
               <path
@@ -240,38 +166,12 @@ const Icon: React.FC<SvgProps> = (props) => {
           </g>
         </g>
         <g>
-          <circle
-            transform="rotate(-45.001 26.784 32.345)"
-            className="prefix__st3"
-            cx={26.8}
-            cy={32.3}
-            r={5}
-          />
-          <circle
-            transform="rotate(-45.001 26.784 32.345)"
-            className="prefix__st4"
-            cx={26.8}
-            cy={32.3}
-            r={4.2}
-          />
-          <circle
-            transform="rotate(-45.001 26.784 32.345)"
-            className="prefix__st5"
-            cx={26.8}
-            cy={32.3}
-            r={3.6}
-          />
+          <circle transform="rotate(-45.001 26.784 32.345)" className="prefix__st3" cx={26.8} cy={32.3} r={5} />
+          <circle transform="rotate(-45.001 26.784 32.345)" className="prefix__st4" cx={26.8} cy={32.3} r={4.2} />
+          <circle transform="rotate(-45.001 26.784 32.345)" className="prefix__st5" cx={26.8} cy={32.3} r={3.6} />
           <g id="prefix__Group" transform="translate(7 7)">
-            <path
-              id="prefix__Fill-1"
-              className="prefix__st2"
-              d="M18.6 23.3l.3.3.7-.7.8.8.3-.3-1.1-1.1z"
-            />
-            <path
-              id="prefix__Fill-2"
-              className="prefix__st2"
-              d="M18.5 27.1l.9.8.1.1.1.2 1-1-.2-.3-.7.7-.9-.8z"
-            />
+            <path id="prefix__Fill-1" className="prefix__st2" d="M18.6 23.3l.3.3.7-.7.8.8.3-.3-1.1-1.1z" />
+            <path id="prefix__Fill-2" className="prefix__st2" d="M18.5 27.1l.9.8.1.1.1.2 1-1-.2-.3-.7.7-.9-.8z" />
             <g id="prefix__Group-5_1_">
               <defs>
                 <filter
@@ -285,20 +185,9 @@ const Icon: React.FC<SvgProps> = (props) => {
                   <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
                 </filter>
               </defs>
-              <mask
-                maskUnits="userSpaceOnUse"
-                x={16.7}
-                y={23.7}
-                width={2.8}
-                height={3.1}
-                id="prefix__mask-6_4_"
-              >
+              <mask maskUnits="userSpaceOnUse" x={16.7} y={23.7} width={2.8} height={3.1} id="prefix__mask-6_4_">
                 <g filter="url(#prefix__Adobe_OpacityMaskFilter_2_)">
-                  <path
-                    id="prefix__path-5_4_"
-                    className="prefix__st0"
-                    d="M16.7 25.3l1.7-1.7 1.6 1.5-1.7 1.7z"
-                  />
+                  <path id="prefix__path-5_4_" className="prefix__st0" d="M16.7 25.3l1.7-1.7 1.6 1.5-1.7 1.7z" />
                 </g>
               </mask>
               <path

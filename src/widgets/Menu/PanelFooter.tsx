@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { PancakeRoundIcon, CogIcon, SvgProps, BfireRoundIcon } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -60,10 +60,12 @@ const PanelFooter: React.FC<Props> = ({
   toggleTheme,
   isDark,
   cakePriceUsd,
+  bfirePriceUsd,
   currentLang,
   langs,
   setLang,
   priceLink,
+  priceLinkBFIRE,
 }) => {
   if (!isPushed) {
     return (
@@ -87,6 +89,19 @@ const PanelFooter: React.FC<Props> = ({
           <Skeleton width={80} height={24} />
         )}
         <Flex>
+        {bfirePriceUsd ? (
+          <PriceLink href={priceLinkBFIRE} target="_blank">
+            <BfireRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${bfirePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+
+        </Flex>
+      </SocialEntry>
+      <SocialEntry>
+      <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
@@ -108,7 +123,7 @@ const PanelFooter: React.FC<Props> = ({
               </Link>
             );
           })}
-        </Flex>
+          </Flex>
       </SocialEntry>
       <SettingsEntry>
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>

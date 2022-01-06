@@ -110,7 +110,6 @@ export const links = [
         label: "Docs",
         href: "https://bbfi.gitbook.io/bitblocks-finance/",
       },
-
     ],
   },
 ];
