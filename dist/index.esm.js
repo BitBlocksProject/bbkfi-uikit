@@ -2236,6 +2236,11 @@ var links = [
 ];
 var socials = [
     {
+        label: "Twitter",
+        icon: "TwitterIcon",
+        href: "https://twitter.com/BBKFI",
+    },
+    {
         label: "Telegram",
         icon: "TelegramIcon",
         items: [
@@ -2256,11 +2261,6 @@ var socials = [
                 href: "https://t.me/BitBlocksANN",
             },
         ],
-    },
-    {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/BBKFI",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2683,6 +2683,69 @@ var Avatar = function (_a) {
 };
 var templateObject_1$G, templateObject_2$e;
 
+var WalletCard$1 = function (_a) {
+    var walletConfig = _a.walletConfig, onDismiss = _a.onDismiss, mb = _a.mb;
+    var title = walletConfig.title, Icon = walletConfig.icon, link = walletConfig.link;
+    var handleClick = function () {
+        if (link) {
+            window.location.href = link;
+        }
+        onDismiss();
+    };
+    return (React.createElement(Button, { fullWidth: true, variant: "tertiary", onClick: handleClick, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
+        React.createElement(Icon, { width: "32px" })));
+};
+
+var Icon$1a = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
+        React.createElement("image", { width: 90, height: 90, href: "/images/egg/bnb.png" })));
+};
+
+var Icon$1b = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
+        React.createElement("image", { width: 90, height: 90, href: "/images/egg/matic.png" })));
+};
+
+var Icon$1c = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
+        React.createElement("image", { width: 90, height: 90, href: "/images/egg/ETH.png" })));
+};
+
+var connectors$1 = [
+    {
+        title: "Binance Smart Chain",
+        icon: Icon$1a,
+        link: "https://bitblocks.finance",
+    },
+    {
+        title: "Polygon (SOON)",
+        icon: Icon$1b,
+        link: "https://bitblocks.finance",
+    },
+    {
+        title: "Ethereum (SOON)",
+        icon: Icon$1c,
+        link: "https://bitblocks.finance",
+    },
+];
+
+var ConnectModal$1 = function (_a) {
+    var _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
+    return (React.createElement(Modal, { title: "Change network", onDismiss: onDismiss }, connectors$1.map(function (walletConfig, index) { return (React.createElement(WalletCard$1, { key: walletConfig.title, walletConfig: walletConfig, onDismiss: onDismiss, mb: index < connectors$1.length - 1 ? "8px" : "0" })); })));
+};
+
+function useNetworkModal() {
+    var _a = useModal(React.createElement(ConnectModal$1, null)), openModal = _a[0], closeModal = _a[1];
+    return { openModal: openModal, closeModal: closeModal };
+}
+
+var ChooseNetwork = function () {
+    var openModal = useNetworkModal().openModal;
+    return (React.createElement("div", null,
+        React.createElement(Button, { size: "sm", onClick: function () { return openModal(); } }, "Change network")));
+};
+
 var Wrapper$1 = styled.div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
 var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
@@ -2748,6 +2811,7 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(Flex, null,
+                React.createElement(ChooseNetwork, null),
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
         React.createElement(BodyWrapper, null,
