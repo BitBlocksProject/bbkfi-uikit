@@ -116,6 +116,11 @@ export const links = [
 
 export const socials = [
   {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/BBKFI",
+  },
+  {
     label: "Telegram",
     icon: "TelegramIcon",
     items: [
@@ -138,11 +143,7 @@ export const socials = [
       },
     ],
   },
-  {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/BBKFI",
-  },
+
 ];
 
 export const MENU_HEIGHT = 64;
