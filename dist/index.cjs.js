@@ -2732,9 +2732,9 @@ var connectors$1 = [
         link: "https://bitblocks.finance",
     },
     {
-        title: "Polygon (SOON)",
+        title: "Polygon",
         icon: Icon$1b,
-        link: "https://bitblocks.finance",
+        link: "https://polygon.bitblocks.finance",
     },
     {
         title: "Ethereum (SOON)",
