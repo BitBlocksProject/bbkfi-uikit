@@ -10,9 +10,9 @@ const connectors: Config[] = [
     link: "https://bitblocks.finance",
   },
   {
-    title: "Polygon (SOON)",
+    title: "Polygon",
     icon: MATIC,
-    link: "https://bitblocks.finance",
+    link: "https://polygon.bitblocks.finance",
   },
   {
     title: "Ethereum (SOON)",
