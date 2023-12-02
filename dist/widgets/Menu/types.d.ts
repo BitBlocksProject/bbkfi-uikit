@@ -42,6 +42,7 @@ export interface PanelProps {
     links: Array<MenuEntry>;
     priceLink: string;
     priceLinkBFIRE: string;
+    priceLinkWBBK: string;
 }
 export interface NavProps extends PanelProps {
     account?: string;

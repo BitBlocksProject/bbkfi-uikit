@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps, BfireRoundIcon } from "../../components/Svg";
+import { PancakeRoundIcon, CogIcon, SvgProps, BfireRoundIcon, WbbkRoundIcon } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -61,11 +61,13 @@ const PanelFooter: React.FC<Props> = ({
   isDark,
   cakePriceUsd,
   bfirePriceUsd,
+  wbbkPriceUsd,
   currentLang,
   langs,
   setLang,
   priceLink,
   priceLinkBFIRE,
+  priceLinkWBBK,
 }) => {
   if (!isPushed) {
     return (
@@ -100,6 +102,21 @@ const PanelFooter: React.FC<Props> = ({
 
         </Flex>
       </SocialEntry>
+        
+      <SocialEntry>
+      <Flex>
+        {wbbkPriceUsd ? (
+          <PriceLink href={priceLinkWBBK} target="_blank">
+            <WbbkRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${wbbkPriceUsd.toFixed(6)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+
+        </Flex>
+        </SocialEntry>
+
       <SocialEntry>
       <Flex>
           {socials.map((social, index) => {
