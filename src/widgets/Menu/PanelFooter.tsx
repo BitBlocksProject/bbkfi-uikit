@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps, BfireRoundIcon, WbbkRoundIcon } from "../../components/Svg";
+import { PancakeRoundIcon, CogIcon, SvgProps, BfireRoundIcon,BaquaRoundIcon, WbbkRoundIcon } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -59,14 +59,15 @@ const PanelFooter: React.FC<Props> = ({
   pushNav,
   toggleTheme,
   isDark,
+  Dtoken,
   cakePriceUsd,
-  bfirePriceUsd,
+  DtokenPriceUsd,
   wbbkPriceUsd,
   currentLang,
   langs,
   setLang,
   priceLink,
-  priceLinkBFIRE,
+  priceLinkDtoken,
   priceLinkWBBK,
 }) => {
   if (!isPushed) {
@@ -91,10 +92,12 @@ const PanelFooter: React.FC<Props> = ({
           <Skeleton width={80} height={24} />
         )}
         <Flex>
-        {bfirePriceUsd ? (
-          <PriceLink href={priceLinkBFIRE} target="_blank">
-            <BfireRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${bfirePriceUsd.toFixed(3)}`}</Text>
+        {DtokenPriceUsd ? (
+          <PriceLink href={priceLinkDtoken} target="_blank">
+         
+          {Dtoken == 0 ? ( <BfireRoundIcon width="24px" mr="8px" /> ) : ( <BaquaRoundIcon width="24px" mr="8px" /> )}
+
+            <Text color="textSubtle" bold>{`$${DtokenPriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
