@@ -2680,6 +2680,11 @@ var Icon$1a = function (props) {
         React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/egg/ETH.png" })));
 };
 
+var Icon$1b = function (props) {
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
+        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/egg/MANTA.png" })));
+};
+
 var connectors$1 = [
     {
         title: "Binance Smart Chain",
@@ -2690,6 +2695,11 @@ var connectors$1 = [
         title: "Polygon",
         icon: Icon$19,
         link: "https://polygon.bitblocks.finance",
+    },
+    {
+        title: "Pacific Manta",
+        icon: Icon$1b,
+        link: "https://manta.bitblocks.finance",
     },
     {
         title: "Ethereum (SOON)",
