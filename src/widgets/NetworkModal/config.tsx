@@ -1,6 +1,7 @@
 import BSC from "./icons/BSC";
 import MATIC from "./icons/MATIC";
 import ETH from "./icons/ETH";
+import MANTA from "./icons/MANTA";
 import { Config } from "./types";
 
 const connectors: Config[] = [
@@ -13,6 +14,11 @@ const connectors: Config[] = [
     title: "Polygon",
     icon: MATIC,
     link: "https://polygon.bitblocks.finance",
+  },
+  {
+    title: "Pacific Manta",
+    icon: MANTA,
+    link: "https://manta.bitblocks.finance",
   },
   {
     title: "Ethereum (SOON)",
